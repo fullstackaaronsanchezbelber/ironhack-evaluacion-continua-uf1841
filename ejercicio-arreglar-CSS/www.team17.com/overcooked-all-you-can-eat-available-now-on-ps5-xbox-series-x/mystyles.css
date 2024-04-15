@@ -5,3 +5,23 @@
 /* h1 {
     color: red;
 } */
+
+
+.char {
+    color: #F77D00;
+}
+
+.row {
+    background-color: rgba(132, 0, 197, 0.7);
+}
+
+h4{
+    text-align: center;
+}
+
+.logos-social-networks  {
+    /* display: flex; En el inspeccionador sale el display flex por eso no lo pongo, auqnue creo que si lo hiciera yo lo podría aquí directamente */
+    justify-content: center;
+}
+
+

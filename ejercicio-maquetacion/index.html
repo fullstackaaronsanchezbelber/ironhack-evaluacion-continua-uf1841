@@ -6,36 +6,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
+         * {
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+
+        .column {
+            width: calc(33.33% - 20px);
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .column:hover {
+            box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .column.pro:hover {
+            box-shadow: 0 8px 12px 0 rgba(104, 104, 171, 0.8);
+        }
+
+        .title {
+            color: #6868AC;
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .features {
+            margin-bottom: 20px;
+        }
+
+        .button {
+            background-color: #6868AC;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #4f4f8b;
+        }
+
+        @media (max-width: 768px) {
+            .column {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .column {
+                width: calc(100% - 20px);
+            }
         }
     </style>
 </head>
 
 <body>
-    Básico
-    $ 9.99 / año
-    10GB de Almacenamiento
-    10 Correos Electrónicos
-    10 Dominios
-    1GB de Ancho de Banda
-    Registrarse
-    
-    Pro
-    $ 24.99 / año
-    25GB de Almacenamiento
-    25 Correos Electrónicos
-    25 Dominios
-    2GB de Ancho de Banda
-    Registrarse
-    
-    Premium
-    $ 49.99 / año
-    50GB de Almacenamiento
-    50 Correos Electrónicos
-    50 Dominios
-    5GB de Ancho de Banda
-    Registrarse
+    <div class="container">
+        <div class="column">
+            <div class="title">Básico</div>
+            <div class="price">$ 9.99 / año</div>
+            <div class="features">
+                <p>10GB de Almacenamiento</p>
+                <p>10 Correos Electrónicos</p>
+                <p>10 Dominios</p>
+                <p>1GB de Ancho de Banda</p>
+            </div>
+            <button class="button">Registrarse</button>
+        </div>
+        <div class="column pro">
+            <div class="title">Pro</div>
+            <div class="price">$ 24.99 / año</div>
+            <div class="features">
+                <p>25GB de Almacenamiento</p>
+                <p>25 Correos Electrónicos</p>
+                <p>25 Dominios</p>
+                <p>2GB de Ancho de Banda</p>
+            </div>
+            <button class="button">Registrarse</button>
+        </div>
+        <div class="column">
+            <div class="title">Premium</div>
+            <div class="price">$ 49.99 / año</div>
+            <div class="features">
+                <p>50GB de Almacenamiento</p>
+                <p>50 Correos Electrónicos</p>
+                <p>50 Dominios</p>
+                <p>5GB de Ancho de Banda</p>
+            </div>
+            <button class="button">Registrarse</button>
+        </div>
+    </div>
 </body>
 
 </html>

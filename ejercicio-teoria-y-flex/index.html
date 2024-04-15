@@ -13,15 +13,22 @@
 
         .dice {
             display: flex;
+            justify-content: center;
+            align-items: center;
             border: 1px solid black;
-            width: 300px;
+            width: 100px;
+            height: 100px;
+            
+            
+
         }
 
         .dice>div {
             width: 50px;
             height: 50px;
-            border-radius: 50%;
+            border-radius: 10px;
             background-color: black;
+            margin: 5px;
         }
     </style>
 
@@ -36,22 +43,22 @@
         <h2>Dada esta regla CSS</h2>
         <img src="cssrule.png" alt="">
         <ol>
-            <li>¿Qué tipo de selector CSS es? <span>Respuesta: Es un selector de...<del>id</del> </span></li>
-            <li>¿Cuantas propiedades CSS establece este selector? <span>Respuesta:</span></li>
-            <li>¿Cuál es el valor de la segunda propiedad? <span>Respuesta:</span></li>
+            <li>¿Qué tipo de selector CSS es? <span>Respuesta: Es un selector de CLASE </span></li>
+            <li>¿Cuantas propiedades CSS establece este selector? <span>Dos propiedades css: el color de texto y el tamaño de la fuente</span></li>
+            <li>¿Cuál es el valor de la segunda propiedad? <span>18px</span></li>
         </ol>
         <h2>Analiza el siguiente tag img</h2>
         <img src="tagimg.png" alt="">
         <ol>
-            <li>¿Cuantos atributos tiene este tag? <span>Respuesta:</span></li>
-            <li>¿Cuál es el valor del atributo <i>src</i>? <span>Respuesta:</span></li>
+            <li>¿Cuantos atributos tiene este tag? <span>3 atributos</span></li>
+            <li>¿Cuál es el valor del atributo <i>src</i>? <span>dar la url de la imagen que se mostrará</span></li>
             <li>Imagina que tenemos la siguiente reglas CSS. ¿Crees que el tamaño de la imagen sería de 1000px? ¿Por
                 qué? <img src="big-image.png" alt=""> </li>
-            <p><span>Respuesta:</span></p>
+            <p><span>NO, el tamaño de la imagen es el 100% del contenedor. Hay prioridad de una propiedad css externa</span></p>
         </ol>
         <h2>¿Cuál es el valor de la propiedad <i>font-weight</i> de este botón?</h2>
         <button type="button" onclick="alert('Hello world!')">Click Me!</button>
-        <p><span>Respuesta: </span></p>
+        <p><span>Si inspecciono elemento me sale esto: font-weight: var(--pico-font-weight); o mejr dicho 400 si te colocas encima de la frase </span></p>
     </div>
     <div class="container">
         <h2>Crea un dado que muestre la cara del "dos" usando flex adecuadamente.</h2>
